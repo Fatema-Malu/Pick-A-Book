@@ -1,0 +1,28 @@
+.title{
+	color:black;
+	font-size:40px;
+	text-align:center;   
+}
+.rowh{
+height:50px; 
+}
+.row{
+	font-color: purple;
+}
+body{
+	background-image:url('37.jpg');
+	background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover; 
+    font-size: 25px;
+    color: purple;
+    text-shadow:2px 2px 2px pink;
+
+}
+.btns{
+	margin-top:10px;
+	width:200px;
+	height:50px;   
+	position:relative;
+	left:30%; 
+}

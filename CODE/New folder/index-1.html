@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="s11.css">
+
+  <title>Cricket</title>
+
+
+
+
+  	<div class="container-fluid heading">
+  		<div class="row rowh">
+  			<div class="col-sm-3">
+  				<div class="dropdown btns">
+  		  <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">Teams</button>
+  		  <div class="dropdown-menu">
+             <a class="dropdown-item" href="includes/display/dispplayers.php">India</a>
+             <a class="dropdown-item" href="#">Australia</a>
+             <a class="dropdown-item" href="#">England</a>
+          </div>
+
+  	</div>
+  	  	<div class="dropdown btns">
+  		  <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">Match</button>
+  		  <div class="dropdown-menu">
+             <a class="dropdown-item" href="#">Odi</a>
+             <a class="dropdown-item" href="#">Test</a>
+             <a class="dropdown-item" href="#">T20</a>
+          </div>
+
+  	</div>
+  	  	<div class="dropdown btns">
+  		  <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">Players</button>
+  		  <div class="dropdown-menu">
+             <a class="dropdown-item" href="#">Batsman</a>
+             <a class="dropdown-item" href="#">Bowler</a>
+             <a class="dropdown-item" href="#">All-Rounder</a>
+          </div>
+
+  	</div>
+  			</div>
+  			<div class="col-sm-5">
+  				<div class="text-lead h1 cricket"><span style="font-family:impact;text-shadow:2px 5px 10px red";>CRICKET MANAGEMENT</span></div>
+  			</div>
+  			<div class="col-sm-4">
+  				<div>
+
+  		<input type="submit" class="btn btn-dark inputbtn" value="SEARCH">
+  		<input type="text" name="player"class="form-control inputtext" value="Name">
+  	</div>
+  			</div>
+  		</div>
+  	</div>
+
+
+
+
+
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+		<div class="col-sm-5 fform">
+			<div class="title">TEAM</div>
+
+
+
+
+      <form method="post" action="includes/team.php" name="teamform" >
+				<div class="form-group">
+					<label for="tid">Team ID:</label>
+					<input type="number" placeholder="Please Enter only Numbers" tabindex="-1" name="tid" class="form-control" required="Please fill team id" pattern="\d{4}">
+				</div>
+				<div class="form-group">
+					<label for="tname">Team Name:</label>
+					<input  type="text" tabindex="-1" placeholder="Please Enter Text" name="tname" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="tcountry">Country:</label>
+					<input type="text" tabindex="-1" placeholder="Please Enter Country name"name="tcountry" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="captainid">Captain id:</label>
+					<input type="number" tabindex="-1" placeholder="Please Enter only Numbers" name="captainid" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="vcapid">Vice-Captain id:</label>
+					<input type="number" tabindex="-1" placeholder="Please Enter only Numbers" name="vcapid" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="tcoachid">Coach id:</label>
+					<input type="number" tabindex="-1" placeholder="Please Enter only Numbers" name="tcoachid" class="form-control" required="Please fill all the details">
+				</div>
+				<div>
+					<input type="submit" name="submit1" tabindex="-1" class="btn btn-success btn-submit">
+				</div>
+			</form>
+
+
+
+
+    </div>
+		<div class="col-sm-1"></div>
+		<div class="col-sm-5 fform">
+			<div class="title text-danger">TICKETS</div>
+			<form method="post" action="">
+				<div class="form-group">
+					<label for="ttid">Ticket ID:</label>
+					<input type="number"  placeholder="Please Enter only Numbers" tabindex="-1" name="ttid" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="ttmid">Ticket Match Id:</label>
+					<input type="number"  placeholder="Please Enter only Numbers" tabindex="-1" name="ttmid" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="ttvenue">Venue:</label>
+					<input type="text"  placeholder="Please Enter only Venue" tabindex="-1" name="ttvenue" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="tttime">Ticket Time:</label>
+					<input type="number" placeholder="Please Enter only Numbers" tabindex="-1"  name="tttime" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="ttprice">Ticket Price:</label>
+					<input type="number" placeholder="Please Enter only Numbers" tabindex="-1"  name="ttprice" class="form-control" required="Please fill all the details">
+				</div>
+
+				<div>
+					<input type="submit" tabindex="-1" name="submit2" class="btn btn-success btn-submit">
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+	<div class="row">
+		<div class="col-sm-5 fform">
+			<div class="title text-danger">MATCH UP</div>
+			<form method="post" action="">
+				<div class="form-group">
+					<label for="mid">Match ID:</label>
+					<input type="number" placeholder="Please Enter only Numbers" tabindex="-1" name="mid" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="team1id">Team1 Id:</label>
+					<input type="number" placeholder="Please Enter only Numbers" tabindex="-1" name="team1id" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="team2id">Team2 Id:</label>
+					<input type="number" placeholder="Please Enter only Numbers" tabindex="-1" name="team2id" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="mpredict">Prediction:</label>
+					<input type="text" placeholder="Please Enter text" tabindex="-1" name="mpredict" class="form-control" required="Please fill all the details">
+				</div>
+				<div>
+					<input type="submit"tabindex="-1" name="submit3" class="btn btn-success btn-submit">
+				</div>
+			</form>
+		</div>
+		<div class="col-sm-1"></div>
+		<div class="col-sm-5 fform">
+			<div class="title text-danger">STATISTICS</div>
+			<form method="post" action="">
+				<div class="form-group ">
+					<label for="sid">Stats id:</label>
+					<input type="number" placeholder="Please Enter only Numbers" tabindex="-1"  name="sid" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="mid">match Id:</label>
+					<input type="number" placeholder="Please Enter only Numbers" tabindex="-1" name="mid" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="swinnerid">Winner Id:</label>
+					<input type="number" placeholder="Please Enter only Numbers" tabindex="-1" name="swinnerid" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="swinby">Prediction:</label>
+					<input type="number" placeholder="Please Enter only Numbers" tabindex="-1" name="swinby" class="form-control" required="Please fill all the details">
+				</div>
+				<div>
+					<input type="submit"tabindex="-1"  name="submit4" class="btn btn-success btn-submit">
+				</div>
+			</form>
+		</div>
+		</div>
+	</div>
+
+
+    <div class="row">
+    	<div class="col-sm-3"></div>
+    	<div class="col-sm-6 fform">
+    		<div class="title text-danger">PLAYER</div>
+			<form method="post" action="includes/player.php" class="form">
+				<div class="form-group">
+					<label for="pid">Player ID:</label>
+					<input type="number" placeholder="Please Enter only Numbers" tabindex="-1" name="pid" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="prank">Player Ranking:</label>
+					<input type="number" placeholder="Please Enter only Numbers" tabindex="-1" name="prank" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="pteam">Player Team:</label>
+					<input type="text" placeholder="Please Enter Text" tabindex="-1" name="pteam" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="pname">Player Name:</label>
+					<input type="text" placeholder="Please Enter Text" tabindex="-1"name="pname" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="page">Age:</label>
+					<input type="number" placeholder="Please Enter only Numbers" tabindex="-1" name="page" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="pjob">Batsman/Bowler/all-Rounder:</label>
+					<input type="text" placeholder="Please Enter Text" tabindex="-1"name="pjob" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="pavg">Player Avg:</label>
+					<input type="number" placeholder="Please Enter only Numbers" tabindex="-1" name="pavg" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="psr">Player Strike Rate:</label>
+					<input type="number" placeholder="Please Enter only Numbers" tabindex="-1" name="psr" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="ptr">Player total runs:</label>
+					<input type="number"placeholder="Please Enter only Numbers" tabindex="-1" name="ptr" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="ptw">Player total wickets:</label>
+					<input type="number" placeholder="Please Enter only Numbers" tabindex="-1" name="ptw" class="form-control" required="Please fill all the details">
+				</div>
+				<div class="form-group">
+					<label for="pbest">Player Best:</label>
+					<input type="number" placeholder="Please Enter only Numbers" tabindex="-1" name="pbest" class="form-control" required="Please fill all the details">
+				</div>
+				<div>
+					<input type="submit" name="submit5" tabindex="-1" class="btn btn-success btn-submit btns">
+				</div>
+			</form>
+    	</div>
+    	<div class="col-sm-2"></div>
+    </div>
+
+	</div>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</html>

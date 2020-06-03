@@ -1,0 +1,82 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+header{
+	background-image: url('17.jpg');
+	height: 100vh;
+	background-size: cover;
+	background-position: center; 
+
+}
+ul{
+	float: right;
+	list-style: none;
+	margin-top: 25px;
+}
+ul li{
+	display: inline-block;
+
+}
+ul li a{
+	text-decoration: none;
+	color: black;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+ul li a:hover{
+	background-color: #000;
+	color: #fff;
+}
+ul li.active a{
+	background-color: #000;
+	color: #fff;
+}
+.logo img{
+	float: left;
+	margin-top: 20px; 
+	width: 200px;
+	height: auto;
+}
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+.title{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+.title h1{
+	color: #000;
+	font-size: 40px;
+	font-family: "Comic Sans MS", cursive, sans-serif; 
+
+}
+.para{
+	color: #000;
+	font-size: 20px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+.cimg{
+	
+}
+body{
+	justify-content: center;
+}
+.img{
+	
+	margin-bottom: 20px;
+	justify-content: center;
+	width: 10px;
+	height: 10px;
+}
+.red
+{
+	width:10px;
+	height:10px;  
+}

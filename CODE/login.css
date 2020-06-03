@@ -1,0 +1,39 @@
+body{
+	
+	background-image:url('16.jpg');
+	background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover; 
+}
+.fform{
+	background-color:#fff;
+	position:relative;
+	top:100px;  
+	padding:5px; 
+	background:transparent;
+}
+
+.btns{
+	margin-top:50px;
+	width:200px;
+	height:50px;   
+	position:relative;
+	left:18%; 
+
+}
+label{
+	color:#fff; 
+}
+.heading{
+	font-size:70px;
+	color:lightgray;
+	position:relative;
+	left:15%;
+	top:40px; 
+	text-shadow:2px 2px 2px #fff;  
+
+} 
+.rowh{
+width:auto;
+height:50%;  
+}

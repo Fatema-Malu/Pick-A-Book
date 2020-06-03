@@ -1,0 +1,98 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Luminari, fantasy;
+}
+header{
+	background-image: url('1.jpg');
+	height: 100vh;
+	background-size: cover;
+	background-position: center; 
+
+}
+.title2 h1{
+	text-align: center;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	color: steelblue;
+	font-size: 40px;
+}
+.bform{
+	margin-top: 20px;
+	transition: all 4s ease-in-out;
+}
+.bform{
+	
+	width: 600px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid black;
+	color: purple;
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+input{
+	height: 45px;
+	background: #ff57;
+}
+form .submitt{
+	background:slateblue ;
+	border-color: transparent;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 50px;
+	width: 200px;
+	margin-top: 20px;
+
+} 
+form .submitt:hover {
+	background-color: #000;
+	cursor: pointer; 
+}
+.rating{
+	position: absolute;
+	top:50%
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+}
+.rating input{
+	/*display: none;*/
+}
+.rating label{
+	display: block;
+	cursor: pointer;
+	width: 50px;
+	
+}
+.rating label:before
+{
+	content: '\f005 '; 
+	font-family: fontAwesome;
+	position: relative;
+	display: block;
+	font-size: 50px;
+	color: #101010; 
+}
+.rating label:after
+{
+	content: '\f005 '; 
+	font-family: fontAwesome;
+	position: relative;
+	display: block;
+	font-size: 50px;
+	color: #1f9cff; 
+	top: 0;
+	opacity: 1;
+	transition: .5s;
+	text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+.rating label:hover: after,
+.rating label:checked ~ label: after
+{
+	opacity: 1;
+
+}

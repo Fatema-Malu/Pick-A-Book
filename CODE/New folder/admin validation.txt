@@ -1,0 +1,84 @@
+
+javascript
+
+function myfunc(e) {
+    if(e.keyCode == '9') {
+        alert("Required");
+        e.preventDefault(); 
+    }
+}
+
+
+
+eg code(Admin)
+<html>
+<head>
+<title>Login Page</title>
+<center>
+<font size="" color=""></font>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</center>
+
+<style>
+body{
+	background: url(login.jpg) no-repeat;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	font-family: sans-serif;
+	color: white;
+}
+</style>
+
+</head>
+<script src="script.js"></script>
+<body>
+<form  name="loginForm"  method="post" action="admin.html">
+
+<table width="500" height="200" bgcolor=black align="left">
+<!--<form action="adminlogin.html" onsubmit="return validation()" class="bg-light">
+-->
+
+<tr>
+<td colspan=2><center><font size=4><b>Welcome Admin :)</b></font></center></td>
+</tr>
+
+<tr>
+<td>Username:</td>
+<td><input type="text" size=25 name="userid" onkeydown="myfunc(event)" required ></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="Password" size=25 name="pwd"  onkeydown="myfunc(event)" required ></td>
+</tr>
+
+<tr>
+<td ><input type="Reset"></td>
+<td><input type="submit" onclick="return check(this.form)" value="Login"></td>
+</tr>
+
+</table>
+</form>
+<!--<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "Ananya" && form.pwd.value == "Ananya")
+{
+	return true;
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
+
+</body>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/twbs/bootsrap/v4-dev/dist/js.bootsrap.js"></script>
+</body>
+</html>

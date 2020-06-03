@@ -1,0 +1,49 @@
+body{
+	
+	background-image:url('18.jpg');
+	background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover; 
+    text-align: center;
+
+}
+.fform{
+	background-color:#fff;
+	display: inline-block;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	background:transparent;  
+}
+label{
+	color:#fff;
+	font-size:25px;  
+}
+.btns{
+	margin-top:10px;
+	width:150px;
+	height:35px;   
+	margin-left: 6%;
+	
+}
+
+.heading{
+	font-size:70px;
+	color:darkslateblue;
+	
+	 
+	text-shadow:2px 2px 2px #fff;  
+
+} 
+.red
+{
+	background-color:red; 
+}
+.green
+{
+	background-color:green; 
+}
+.rowh{
+	height:25px;
+	width:45px;  
+}
